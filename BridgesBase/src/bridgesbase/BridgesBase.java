@@ -31,7 +31,12 @@ public class BridgesBase
         //Process the data
         
         //Create a scene graph (SymbolCollection) object
-        SymbolCollection cvh = new SymbolCollection();
+        SymbolCollection scene = new SymbolCollection();
+        bridges.setDataStructure(scene);
+        
+        //Set the window (the visible range of X and Y)
+        //  These numbers need to be set to something that works for the data set.
+        scene.setViewport(-100.0f, 100.0f, -100.0f, 100.0f);
         
         //Add shapes to the SymbolCollection for the server to draw
 

@@ -3,9 +3,7 @@
 
 package bridgesbase;
 
-import bridges.base.SymbolCollection;
 import bridges.connect.Bridges;
-import bridges.connect.DataSource;
 
 public class BridgesBase 
 {
@@ -17,29 +15,11 @@ public class BridgesBase
         //  Use your user name and API key from your BRIDGES registation.
         Bridges bridges = new Bridges(ASSIGNMENT, USER_NAME, API_KEY); //do not commit your API key!
         
-        //Set some information for the BRIDGES object
-        bridges.setTitle("Title of the project");
-	bridges.setDescription("Long description");
-
-        //Create the data connection object
-        DataSource ds = bridges.getDataSource();
+        //Run the assignment code in a separate .java file, 
+        //  so you don't have to commit this one.
+        BridgesApp app = new BridgesApp();
+        app.run(bridges);
         
-        //Use the DataSource object to download a data set from the server
-        
-        //Read the data set into a data structure
-        
-        //Process the data
-        
-        //Create a scene graph (SymbolCollection) object
-        SymbolCollection scene = new SymbolCollection();
-        bridges.setDataStructure(scene);
-        
-        //Set the window (the visible range of X and Y)
-        //  These numbers need to be set to something that works for the data set.
-        scene.setViewport(-100.0f, 100.0f, -100.0f, 100.0f);
-        
-        //Add shapes to the SymbolCollection for the server to draw
-
         //Activate the visualization on the server  
         try 
         {

@@ -15,14 +15,14 @@ public class BridgesBase
         //  Use your user name and API key from your BRIDGES registation.
         Bridges bridges = new Bridges(ASSIGNMENT, USER_NAME, API_KEY); //do not commit your API key!
         
-        //Run the assignment code in a separate .java file, 
-        //  so you don't have to commit this one.
-        BridgesApp app = new BridgesApp();
-        app.run(bridges);
-        
-        //Activate the visualization on the server  
         try 
         {
+            //Run the assignment code in a separate .java file, 
+            //  so you don't have to commit this one.
+            BridgesApp app = new BridgesApp();
+            app.run(bridges);
+
+            //Activate the visualization on the server  
             bridges.visualize();
         } 
         catch (java.io.IOException | bridges.validation.RateLimitException e) 

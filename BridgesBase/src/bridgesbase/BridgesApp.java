@@ -12,8 +12,10 @@ public class BridgesApp
     /**
      * Runs all the logic for the BRIDGES assignment. Call from main.
      * @param bridges The initialized Bridges object
+     * @throws java.io.IOException when there is a problem communicating
+     *   with the BRIDGES server.
      */
-    public void run(Bridges bridges)
+    public void run(Bridges bridges) throws java.io.IOException
     {
         //Set some information for the BRIDGES object
         bridges.setTitle("Title of the project");

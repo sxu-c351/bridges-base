@@ -14,8 +14,10 @@ public class BridgesApp
      * @param bridges The initialized Bridges object
      * @throws java.io.IOException when there is a problem communicating
      *   with the BRIDGES server.
+     * @throws bridges.validation.RateLimitException if calls to bridges.visualize()
+     *   throw this exception.
      */
-    public void run(Bridges bridges) throws java.io.IOException
+    public void run(Bridges bridges) throws java.io.IOException, bridges.validation.RateLimitException
     {
         //Set some information for the BRIDGES object
         bridges.setTitle("Title of the project");

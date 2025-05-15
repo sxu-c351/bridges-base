@@ -19,10 +19,11 @@ public class BridgesBase
         {
             //Run the assignment code in a separate .java file, 
             //  so you don't have to commit this one.
-            BridgesApp app = new BridgesApp();
+            var app = new BridgesApp();
             app.run(bridges);
 
-            //Activate the visualization on the server  
+            //Activate the visualization on the server.
+            //  You can delete this if you call visualize within your app.
             bridges.visualize();
         } 
         catch (java.io.IOException | bridges.validation.RateLimitException e) 

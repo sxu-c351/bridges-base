@@ -1,11 +1,11 @@
 //Starter code for BRIDGES projects (https://bridgesuncc.github.io)
 //Created by James Vanderhyde, 13 February 2025
 
-package bridgesbase;
+package bridgesstarter;
 
 import bridges.connect.Bridges;
 
-public class BridgesBase 
+public class BridgesStarter 
 {
     public static void main(String[] args) 
     {

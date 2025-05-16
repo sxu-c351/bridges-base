@@ -36,7 +36,7 @@ public class BridgesAppChicago
         //Read the data set into a data structure
         ArrayList<Point> dataPoints = new ArrayList<>();
         for (OsmVertex v : ov)
-            dataPoints.add(new Point(v.getLongitude(), v.getLatitude()));
+            dataPoints.add(new Point((float)v.getLongitude(), (float)v.getLatitude()));
         
         //Process the data
         System.out.println(dataPoints.size()+" data points.");

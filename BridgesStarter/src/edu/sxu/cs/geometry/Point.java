@@ -5,8 +5,8 @@ package edu.sxu.cs.geometry;
 
 public class Point 
 {
-    public final double x;
-    public final double y;
+    public final float x;
+    public final float y;
     
     public Point()
     {
@@ -14,7 +14,7 @@ public class Point
         y = 0;
     }
     
-    public Point(double x, double y)
+    public Point(float x, float y)
     {
         this.x = x;
         this.y = y;

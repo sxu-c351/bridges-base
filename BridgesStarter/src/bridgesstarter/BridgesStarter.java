@@ -13,12 +13,14 @@ public class BridgesStarter
         //  If you are doing a BRIDGES assignment, use the assignment number. 
         //  Otherwise, use any number.
         //  Use your user name and API key from your BRIDGES registation.
+        //TODO: Fill in the BRIDGES details.
         Bridges bridges = new Bridges(ASSIGNMENT, USER_NAME, API_KEY); //do not commit your API key!
         
         try 
         {
             //Run the assignment code in a separate .java file, 
             //  so you don't have to commit this one.
+            //TODO: Change BridgesApp to your own class that has a run method.
             var app = new BridgesApp();
             app.run(bridges);
 
